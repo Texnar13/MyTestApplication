@@ -77,7 +77,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public int pxFromDp(float dp) {
+
+    public int pxFromDp(float dp){
         return (int) (dp * this.getResources().getDisplayMetrics().density);
     }
 }
