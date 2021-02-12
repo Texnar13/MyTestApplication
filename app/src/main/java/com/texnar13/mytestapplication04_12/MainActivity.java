@@ -23,51 +23,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        View root = getLayoutInflater().inflate(R.layout.activity_main, null);
-//
-//
-//        setContentView(root.findViewById(R.id.big_rect));
-
-
-//        Log.v(TAG, "hello!");
-//        Log.e(TAG, "onCreate: error!");
-//        Log.e(TAG, "onCreate: sdfghjk", new NumberFormatException("my test error"));
-//        Log.wtf(TAG, " error !!! \nsdfghjkl");
-//        Log.i(TAG, "onCreate: ");
-//        Log.d(TAG, "onCreate()");
-
-        //findViewById(R.id.small_rect).setOnClickListener(null);
-
-
-//        View.OnClickListener onClickListener = new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Log.i(TAG, "MainActivity small_rect click " + v.getId());
-//            }
-//        };
-//
-//        findViewById(R.id.small_rect).setOnClickListener(onClickListener);
-
-
-//        findViewById(R.id.big_rect).setOnLongClickListener(new View.OnLongClickListener() {
-//            @Override
-//            public boolean onLongClick(View v) { Log.i(TAG, "MainActivity small_rect longClick " + v.getId());
-//                return false;
-//            }
-//        });
-//
-//        findViewById(R.id.small_rect).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) { Log.i(TAG, "MainActivity small_rect click");
-//            }
-//        });
-//
-//        findViewById(R.id.big_rect).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) { Log.i(TAG, "MainActivity big_rect click");
-//            }
-//        });
-
 
         findViewById(R.id.big_rect).setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -96,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
 
-                int pointerCount = event.getPointerCount();
+                int pointerCount = 3;
                 // {0:{PointerId, x, y} , , , , };
 
                 for (int i = 0; i < 10; i++) {
